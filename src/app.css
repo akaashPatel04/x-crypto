@@ -1,0 +1,60 @@
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+*::selection {
+    background-color: #0b8f82;
+    color: #fff;
+}
+
+.activeButton {
+    color: #fff !important;
+    background-color: #45B8AC !important;
+    padding: 6px 10px;
+    border-radius: 2px;
+}
+
+.passiveButton {
+    color: black !important;
+    background-color: #e4e2e2 !important;
+    padding: 6px 10px;
+    border-radius: 2px;
+}
+
+.searchIcon {
+    position: absolute;
+    right: 70px;
+    z-index: 2;
+}
+
+.aboutPageIconsBottom {
+    font-size: 35px;
+    transition: 0.4s;
+}
+
+.aboutPageIconsBottom:hover {
+    transform: rotate(-360deg);
+    color: #45B8AC;
+}
+
+@media (max-width:720px) {
+    .searchIcon {
+        position: absolute;
+        right: 32px;
+        z-index: 2;
+    }
+
+    .aboutPageIconsBottom {
+        font-size: 28px;
+    }
+
+    .activeButton {
+        padding: 4px 6px;
+    }
+
+    .passiveButton {
+        padding: 4px 6px;
+    }
+
+}
